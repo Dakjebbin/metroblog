@@ -56,7 +56,7 @@ const Header = () => {
        {isMenu ? <nav className="absolute right-4 top-16 bg-[#205781] py-7 px-10 rounded-tr-sm rounded-2xl">
         <img className="w-7 mb-5 m-auto" src={assets.bblogo} alt="BB Logo" />
         <ul className=" ">
-           <Link to="/">
+           <Link to="/" onClick={() => scrollTo(0,0)}>
             <li className="mb-4 text-xl hover:text-[#F6F8D5] duration-300">News</li>
             </Link>
             <Link to="/">
