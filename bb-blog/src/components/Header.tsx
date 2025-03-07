@@ -29,13 +29,13 @@ const Header = () => {
         </div>
 
         <nav className="mr-14" >
+         
             <ul className="flex">
-                <Link to="/">
-                <li className="mr-3 hover:text-[#795d38] text-xl">News</li>
-                </Link>
-                <li className="mr-3 text-xl">Events</li>
-                <li className="mr-3 text-xl">History</li>
+                <li className="mr-3 hover:text-[#795d38] text-xl"><a href="#news">News</a></li>
+                <li className="mr-3 hover:text-[#795d38] text-xl"><a href="#events">Events</a></li>
+                <li className="mr-3 hover:text-[#795d38] text-xl"><a href="#history">History</a></li>
             </ul>
+      
         </nav>
     </header>
 
@@ -56,15 +56,15 @@ const Header = () => {
        {isMenu ? <nav className="absolute right-4 top-16 bg-[#205781] py-7 px-10 rounded-tr-sm rounded-2xl">
         <img className="w-7 mb-5 m-auto" src={assets.bblogo} alt="BB Logo" />
         <ul className=" ">
-           <Link to="/" onClick={() => scrollTo(0,0)}>
-            <li className="mb-4 text-xl hover:text-[#F6F8D5] duration-300">News</li>
-            </Link>
-            <Link to="/">
-            <li className="mb-4 text-xl hover:text-[#F6F8D5] duration-300">Events</li>
-            </Link>
-            <Link to="/">
-            <li className="mb-3 text-xl hover:text-[#F6F8D5] duration-300">History</li>
-            </Link>
+         
+            <li className="mb-4 text-xl hover:text-[#F6F8D5] duration-300"><a href="#news">News</a></li>
+          
+            
+            <li className="mb-4 text-xl hover:text-[#F6F8D5] duration-300"><a href="#events">Events</a></li>
+           
+           
+            <li className="mb-3 text-xl hover:text-[#F6F8D5] duration-300"><a href="#history">History</a></li>
+           
            
         </ul>
         </nav> : null}

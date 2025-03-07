@@ -49,6 +49,19 @@ body{
   font-style: normal;
   letter-spacing: 3px;
 }
+.instrument-serif-regular1 {
+  font-family: "Instrument Serif", serif;
+
+  font-style: normal;
+ 
+}
+
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
 .our-courses{
   display: flex;
   align-items: center;
